@@ -1,11 +1,11 @@
-import portrait from "@/assets/dikshant-portrait.jpg";
+import portrait from "@/assets/dikshant-photo.jpeg";
 import { Calendar, Download } from "lucide-react";
 
 const HeroSection = () => {
   return (
     <section className="hero-gradient min-h-screen flex items-center section-padding">
       <div className="container mx-auto">
-        <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+        <div className="flex flex-col-reverse lg:flex-row items-center gap-12 lg:gap-20">
           {/* Text */}
           <div className="flex-1 text-center lg:text-left space-y-6 animate-fade-in-up">
             <p className="text-sm tracking-[0.3em] uppercase text-primary font-medium">
@@ -41,9 +41,9 @@ const HeroSection = () => {
             </div>
           </div>
 
-          {/* Portrait */}
+          {/* Portrait - top right */}
           <div className="flex-shrink-0 animate-fade-in" style={{ animationDelay: "0.3s" }}>
-            <div className="w-56 h-56 md:w-72 md:h-72 rounded-2xl overflow-hidden border-2 border-border glow-shadow">
+            <div className="w-60 h-60 md:w-80 md:h-80 rounded-2xl overflow-hidden border-2 border-border glow-shadow">
               <img
                 src={portrait}
                 alt="Dikshant Yadav — Product Manager"
